@@ -1,0 +1,115 @@
+.checkout {
+    min-height: calc(100vh - 29rem);
+    padding: 5rem 12rem;
+    margin-top: 5rem;
+
+    &-empty {
+        padding: 5rem 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__text {
+            font-size: large;
+            margin-left: 5rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list-item {
+        display: flex;
+        padding: 1rem 0;
+        max-width: 55rem;
+        &:not(:last-child) {
+            border-bottom: 1px solid #586072;
+        }
+    }
+
+    &__list-item-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 3rem;
+    }
+
+    &__list-item-text {
+        font-size: 1.5rem;
+    }
+
+    &__list-item-text--sub {
+        font-size: 1.5rem;
+    }
+
+    &__list-item-price {
+        font-size: 1.5rem;
+        &-desc {
+            font-size: 1rem;
+            padding-right: 0.5rem;
+        }
+    }
+
+    &__list-item-counter {
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+        font-size: 1.5rem;
+
+        input[type="number"] {
+            height: 3rem;
+            width: 7rem;
+            border: none;
+            margin-left: 1rem;
+            background-color: white;
+        }
+    }
+
+    &__list-item-counter-button {
+        border: none;
+        background-color: #ec833f;
+        color: white;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    &-total {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #586072;
+        padding-top: 4rem;
+        margin-top: 4rem;
+        align-items: center;
+
+        &-content {
+            display: flex;
+        }
+
+        &__text {
+            font-size: 3rem;
+        }
+        &__value {
+            font-size: 3rem;
+            font-weight: 700;
+            padding-left: 2rem;
+        }
+    }
+
+    &-button {
+        border: none;
+        background-color: #576072;
+        color: white;
+        font-size: 2rem;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        width: 15rem;
+        margin-top: 4rem;
+    }
+}
